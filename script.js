@@ -38,3 +38,17 @@ tl.from("#page1",{//ab page ayega loader hatega to
 tl.to("#loader",{//loader ka kaam ni h gyb kar diya
     display:"none"
 })
+function cursoranime(){
+    //code for cursor
+document.addEventListener("mousemove",function(dets){
+    gsap.to("#cursor",{
+      left:dets.x,
+      top:dets.y
+    })
+  })
+  Shery.makeMagnet("#nav2 h4" /* Element to target.*/, {
+      //Parameters are optional.
+      
+    });
+}
+cursoranime()
