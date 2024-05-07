@@ -21,7 +21,7 @@ html,body{
     background-color: rgb(7, 7, 7);
     border: 2px solid white; 
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     mix-blend-mode:difference ;/*it will change color acc. to position*/
     transform: translate(-50%,50%);/*it will not point now to top left*/
 }
@@ -131,6 +131,12 @@ html,body{
 .middle{
     width: 75%;
     margin-left:25% ;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
 }
 .middle:nth-child(2){/*we have taken nth child 2 bcoz it is a css bug it assumes wrong*/
     margin-top: 18vh;/* it assume nav as child one and .hero h1 as 2*/
@@ -138,8 +144,26 @@ html,body{
 }
 .middle h1{
    font-size: 7.5vw;
-   text-transform: capitalize;
+   text-transform: uppercase;
    line-height: 7vw;/*gap bhut tha dono ke beech*/
    font-family:'Gilroy';
-   font-weight: 500;
+   font-weight: 300;
 }
+.middle h2{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    line-height: 7vw;/*gap bhut tha dono ke beech*/
+    font-family:'Gilroy';
+    font-weight: 300;
+    border-bottom: 0.5vw solid white;
+    padding-bottom:0.8vw ;
+    transition: all ease 0.3s;
+ }
+ /*adding flag wala effect*/
+ .middle h2:hover{
+     -webkit-text-stroke: 1px   #ffffff;
+     color: transparent;
+     font-weight:500;
+     border-bottom: transparent;/*hover kro border line gyb!*/
+ }
+ 

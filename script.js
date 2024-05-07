@@ -38,6 +38,14 @@ tl.from("#page1",{//ab page ayega loader hatega to
 tl.to("#loader",{//loader ka kaam ni h gyb kar diya
     display:"none"
 })
+ tl.from("#nav",{
+     opacity:0//makin nav appear afterwards
+ })
+ 
+tl.from("#middle1 h1, #middle2 h1, #middle3 h2 ,  #middle4 h1 ",{//makin appear middle sec(h1) from bottom
+    y:120,
+    stagger:0.2
+})
 function cursoranime(){
     //code for cursor
 document.addEventListener("mousemove",function(dets){
