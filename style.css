@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing:border-box;
+   font-family: monospace;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    color: #fefdfd;
+}
+#main{
+    position: relative;
+    background-color: #030303;
+}
+#page1{
+    height: 100vh;
+    width: 100vh;
+    background-attachment: #151515;
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    z-index: 999;
+    background-color: #0b0b0b;
+    padding: 25vh 10vw;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    height: fit-content;
+    gap :1.5vw;
+}
+.line h2{
+    font-size: 6.0vw;
+    text-transform:uppercase;
+    font-weight:500;
+    font-family:'Times New Roman', Times, serif;
+     /*addin animation*/
+     opacity: 0;/*ab ye pehle se ni dekhega*/
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+}
+@keyframes anime {/*now me animation add hoga ab*/
+    0%{
+        font-family:'Times New Roman', Times, serif ;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 1;/*yaha pe dekhiega*/
+        font-weight: 500;
+    }
+    47%{
+        font-family:'Times New Roman', Times, serif ;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 0;/*yaha pe ni dekhiega*/
+        font-weight: 500;
+    }
+    50%{
+        font-family:'silk serif black';
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 1;/*yaha pe dekhiega*/
+        font-weight: 500;
+    }
+
+    100%{
+        font-family:'silk serif black';
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 0;/*yaha pe ni dekhiega shining like a star gana to suna hi hoga*/
+        font-weight: 500;
+    }
+}
+#linepart1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+}
+#linepart1 h5, #linepart1 h6{
+    font-size:3vw ;
+    font-weight: 100;
+    font-family:'silk serif black' ;
+}
+#linepart1 h5{
+    width: 5vw;
+    text-align: right;/* ab hilega ni*/
+}
+
+.line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight:500;
+    font-family:'Times New Roman', Times, serif;
+}
