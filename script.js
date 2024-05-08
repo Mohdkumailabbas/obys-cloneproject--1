@@ -43,7 +43,7 @@ tl.to("#loader",{//loader ka kaam ni h gyb kar diya
  })
  
 tl.from("#middle1 h1, #middle2 h1, #middle3 h2 ,  #middle4 h1 ",{//makin appear middle sec(h1) from bottom
-    y:120,
+    y:140,
     stagger:0.2
 })
 function cursoranime(){
