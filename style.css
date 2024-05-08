@@ -223,7 +223,7 @@ body{
     width: 100%;
     background-color: black;
     position: relative;
-    padding-top: 5vh;
+    padding-top: 7vh;
     
 }
 #page4content{
@@ -237,7 +237,7 @@ body{
     text-transform: uppercase;
 }
 #page4content .uline{
-    height:2px;/*about ke necche line le lie*/
+    height:1px;/*about ke necche line le lie*/
     width: 100%;
     background-color: #ffffff;
     margin: 5vw 0;
@@ -262,7 +262,7 @@ body{
 }
 #page4bluediv{
     background-color: #3f7df4;
-    width:33vw;
+    width:30vw;
     padding:3vw 3vw;/*elem ko padding*/
     position: relative;/*imp!!*/
     margin-top: -35vh;
@@ -287,4 +287,56 @@ body{
 #page5{
     min-height: 100vh;
     width:100%;
+    padding-top: 5vw;
+    position: relative;
 }
+.elem5{
+    white-space: nowrap;/*so we can scroll*/
+    overflow: hidden;
+    
+ 
+ }
+ .elem5 h1{
+     color: aliceblue;
+     font-size: 7vw;
+     -webkit-text-stroke: 1px  #fff;
+     font-weight: 400;
+     color: transparent;
+     display: inline-block;/*for scrolling*/
+     text-transform: uppercase;
+     margin-right: 16px;
+     animation-name: anim;
+     animation-duration:5s ;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+ }
+ @keyframes anim {
+    from{
+     transform:translateX(0);
+    }
+    to{
+        transform:translateX(calc(-100% - 20px));
+    }
+}
+.elem51{
+    white-space: nowrap;/*so we can scroll*/
+    overflow: hidden;
+ 
+ }
+.elem51 h1{
+    color: aliceblue;
+    font-size: 7vw;
+    -webkit-text-stroke: 1px  #fff;
+    font-weight: 400;
+    color: transparent;
+    display: inline-block;/*for scrolling*/
+    text-transform: uppercase;
+    margin-right: 16px;
+    transform: translateX(calc(-100% - 20px));
+    animation-name: anim ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+ 
