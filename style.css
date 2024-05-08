@@ -10,6 +10,9 @@ html,body{
     color: #fefdfd;
     font-family: 'Gilroy';
 }
+body{
+    overflow-x: hidden;
+}
 #main{
     position: relative;
     background-color: #030303;
@@ -218,6 +221,70 @@ html,body{
 #page4{
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(17, 180, 225);
+    background-color: black;
     position: relative;
+    padding-top: 5vh;
+    
+}
+#page4content{
+    width: 72vw;
+    background-color: black;
+    margin-left: 28%;
+    position: relative;
+}
+#page4content h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+#page4content .uline{
+    height:2px;/*about ke necche line le lie*/
+    width: 100%;
+    background-color: #ffffff;
+    margin: 5vw 0;
+}
+#page4content>p{
+    font-size: 2.1vw;
+    width: 50%;
+    margin-bottom: 3vw;
+}
+#page4flex { /*para bagl me */
+    display: flex;
+}
+#page4flex img{
+    width: 48%;
+    
+}
+
+#page4flex p{
+    font-size: 0.9vw;
+    width: 19%;
+    margin-left: 1vw;
+}
+#page4bluediv{
+    background-color: #3f7df4;
+    width:33vw;
+    padding:3vw 3vw;/*elem ko padding*/
+    position: relative;/*imp!!*/
+    margin-top: -35vh;
+    margin-left: 26vw;
+}
+.blueelem{
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    padding: 1.5vw;/*space kar diya beech me*/
+    border-bottom: 2px solid #ffffff94;
+}
+.blueelem h4{
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+
+.blueelem p{
+    width: 40%;
+   font-size: 0.7vw;
+}
+#page5{
+    min-height: 100vh;
+    width:100%;
 }
