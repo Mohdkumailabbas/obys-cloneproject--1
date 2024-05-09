@@ -135,7 +135,7 @@ body{
     width: 75%;
     margin-left:25% ;
     height: fit-content;
-    overflow: hidden;
+    /*overflow: hidden;*/
     display: flex;
     align-items: center;
     position: relative;
@@ -145,12 +145,23 @@ body{
     margin-top: 18vh;/* it assume nav as child one and .hero h1 as 2*/
     
 }
+
 .middle h1{
    font-size: 7.5vw;
    text-transform: uppercase;
    line-height: 7vw;/*gap bhut tha dono ke beech*/
    font-family:'Gilroy';
    font-weight: 300;
+   position: relative;
+}
+#middle1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: 'silk serif black';
+    left:-10%;
+    top:10%;
 }
 .middle h2{
     font-size: 7.5vw;
@@ -235,6 +246,16 @@ body{
 #page4content h1{
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
+}
+#page4content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: 'silk serif black';
+    left:-12%;
+    top:8%;
 }
 #page4content .uline{
     height:1px;/*about ke necche line le lie*/
@@ -339,4 +360,56 @@ body{
     animation-iteration-count: infinite;
     animation-direction: reverse;
 }
- 
+#footer{
+    height: 85vh;
+    position: relative;
+    padding-left: 28vw;
+}
+#footer h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    width: 60vw;
+    position: relative;
+}
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: 'silk serif black';
+    left:-12%;
+    top:8%;
+}
+.nechewliline{
+    height: 0.2vw;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 3vw;
+}
+
+#fotterdiv{
+   display: flex;
+   align-items:flex-start ;
+   justify-content: space-between;
+   padding-right: 15vw;
+   padding-top: 4vw;
+   margin-bottom:2vw;
+}
+#fotterdiv h6{
+   font-size: 0.9vw;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+.box{
+    width: 20%;
+    
+}
+#fotterdiv h5{
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+#footer>h5{
+    font-size: 1vw;
+    font-weight: 500;
+    padding-top: 3vh;
+}
