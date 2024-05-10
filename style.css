@@ -135,11 +135,12 @@ body{
     width: 75%;
     margin-left:25% ;
     height: fit-content;
-    /*overflow: hidden;*/
+    overflow: hidden;/*overhato to number gyb*/
     display: flex;
     align-items: center;
     position: relative;
     z-index: 9999;
+
 }
 .middle:nth-child(2){/*we have taken nth child 2 bcoz it is a css bug it assumes wrong*/
     margin-top: 18vh;/* it assume nav as child one and .hero h1 as 2*/
