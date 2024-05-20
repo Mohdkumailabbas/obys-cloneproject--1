@@ -1,3 +1,6 @@
+// main.js
+
+
 function locomotiveanime(){
     gsap.registerPlugin(ScrollTrigger);
 
@@ -96,3 +99,11 @@ document.addEventListener("mousemove",function(dets){
 }
 cursoranime()
 locomotiveanime()
+function Sheryanime(){
+  Shery.imageEffect(".imgdiv",{
+    style:5,
+    debug:true,
+    gooey:true
+  })
+}
+Sheryanime()

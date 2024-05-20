@@ -227,8 +227,54 @@ body{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: coral;
+    padding: 12vh 3vh;
+    margin-top: 10vh;
     position: relative;
+}
+.line500{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 2vh;
+    margin-left: 28vw;
+}
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 5vh;
+   margin-left: 28vw;
+}
+#page3 h1::before{
+    content: "02";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: 'silk serif black';
+    left:-10%;
+    top:40%;
+}
+#imgcontainer{
+    padding: 1vw;
+    position: relative;
+    margin-top: 1vh;
+}
+.imagediv{
+    height: 33vw;
+    width: 24vw;
+    background-color: blue;
+    position: relative;
+    overflow: hidden;/*dusri img hide ho jaiyegi*/
+}
+.imagediv img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+._canvas_container{
+    z-index:99999 !important;
+    pointer-events: none;
 }
 #page4{
     min-height: 100vh;
